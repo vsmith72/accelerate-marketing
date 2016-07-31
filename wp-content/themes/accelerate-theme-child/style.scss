@@ -1,0 +1,143 @@
+/*
+Theme Name:   Accelerate Marketing Child
+Theme URI:    http://vanessa-smith.com/accelerate-theme-child/
+Author:       Vanessa Smith
+Author URI:   www.vanessa-smith.com
+Template:     accelerate-theme
+Version:      1.0.0
+Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+Text Domain:  accelerate-theme-child
+*/
+
+@import url('../accelerate-theme/style.css');
+
+$color: #45ac9d;
+$heading-font: 'Monserrant';
+
+a {
+  color: $color;
+  font-weight: bold;
+  text-decoration: none;
+  &:hover {
+    color: tomato;
+  }
+  &:visited {
+    color: $color;
+  }
+}
+body {
+  background: white;
+}
+/* Homepage Styles */
+.home-page {
+  background: url("img/taxi-photo.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
+}
+
+#masthead {
+  background: none repeat scroll 0 0 $color;
+}
+
+.button {
+  background: none repeat scroll 0 0 $color;
+}
+
+// blog post style on front-page
+.blog-post{
+  width: 50%;
+  h4{
+    font-size: 16px;
+    font-family: $heading-font;
+    color: #a6a6a6;
+    text-transform: uppercase;
+  }
+  h2{
+    font-size: 24px;
+    font-family: $heading-font;
+    font-weight: bold;
+  }
+  .read-more-link {
+    font-size: 24px;
+    font-family: $heading-font;
+    font-weight: bold;
+    color: #45ac9d;
+    text-transform: uppercase;
+  }
+}
+.left {
+  float: left;
+  width: 30%;
+}
+.right{
+  float: right;
+  width: 65%;
+  padding-left: 2%;
+}
+clear{
+  clear:both;
+}
+img {
+  padding-bottom: 2%;
+}
+ h3, h4, h5 {
+  margin-top: 0;
+}
+// featured work
+.featured-work{
+  h4 {
+  text-align: center;
+  }
+}
+
+.homepage-featured-work {
+  width: 100%;
+  padding-bottom: 5%;
+
+}
+.individual-featured-work {
+  display: inline-block;
+  width: 33%;
+  list-style: none;
+  text-align: center;
+  &:last-child {
+    padding-right: 0;
+  }
+}
+
+.case-study {
+  width: 100%;
+  aside, div{
+    display: inline;
+    float: left;
+    padding-bottom: 5%;
+  }
+
+  h5 {
+    color: #666;
+  }
+  h2 {
+    clear: none;
+  }
+
+}
+
+// Top Navigation ============================
+.nav-menu {
+  li {
+  display: inline;
+  padding: 0 10px;
+  }
+  a {
+    color: white;
+    &:visited {
+      color: white;
+    }
+  }
+}
+
+// Hero Area ==================================================================
+.homepage-hero a {
+  color: white;
+  &:visited {
+    color: white;
+  }
+}
