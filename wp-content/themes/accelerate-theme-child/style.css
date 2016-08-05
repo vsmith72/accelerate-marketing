@@ -9,50 +9,50 @@ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, access
 Text Domain:  accelerate-theme-child
 */
 @import url("../accelerate-theme/style.css");
-/* line 17, C:/xampp/htdocs/accelerate/wp-content/themes/accelerate-theme-child/style.scss */
+/* line 17, C:/xampp/htdocs/accelerate-marketing/wp-content/themes/accelerate-theme-child/style.scss */
 a {
   color: #45ac9d;
   font-weight: bold;
   text-decoration: none; }
-  /* line 21, C:/xampp/htdocs/accelerate/wp-content/themes/accelerate-theme-child/style.scss */
+  /* line 21, C:/xampp/htdocs/accelerate-marketing/wp-content/themes/accelerate-theme-child/style.scss */
   a:hover {
     color: tomato; }
-  /* line 24, C:/xampp/htdocs/accelerate/wp-content/themes/accelerate-theme-child/style.scss */
+  /* line 24, C:/xampp/htdocs/accelerate-marketing/wp-content/themes/accelerate-theme-child/style.scss */
   a:visited {
     color: #45ac9d; }
 
-/* line 28, C:/xampp/htdocs/accelerate/wp-content/themes/accelerate-theme-child/style.scss */
+/* line 28, C:/xampp/htdocs/accelerate-marketing/wp-content/themes/accelerate-theme-child/style.scss */
 body {
-  background: white; }
+  background: pink; }
 
 /* Homepage Styles */
-/* line 32, C:/xampp/htdocs/accelerate/wp-content/themes/accelerate-theme-child/style.scss */
+/* line 32, C:/xampp/htdocs/accelerate-marketing/wp-content/themes/accelerate-theme-child/style.scss */
 .home-page {
   background: url("img/taxi-photo.jpg") no-repeat scroll left center/cover transparent; }
 
-/* line 36, C:/xampp/htdocs/accelerate/wp-content/themes/accelerate-theme-child/style.scss */
+/* line 36, C:/xampp/htdocs/accelerate-marketing/wp-content/themes/accelerate-theme-child/style.scss */
 #masthead {
   background: none repeat scroll 0 0 #45ac9d; }
 
-/* line 40, C:/xampp/htdocs/accelerate/wp-content/themes/accelerate-theme-child/style.scss */
+/* line 40, C:/xampp/htdocs/accelerate-marketing/wp-content/themes/accelerate-theme-child/style.scss */
 .button {
   background: none repeat scroll 0 0 #45ac9d; }
 
-/* line 45, C:/xampp/htdocs/accelerate/wp-content/themes/accelerate-theme-child/style.scss */
+/* line 45, C:/xampp/htdocs/accelerate-marketing/wp-content/themes/accelerate-theme-child/style.scss */
 .blog-post {
   width: 50%; }
-  /* line 47, C:/xampp/htdocs/accelerate/wp-content/themes/accelerate-theme-child/style.scss */
+  /* line 47, C:/xampp/htdocs/accelerate-marketing/wp-content/themes/accelerate-theme-child/style.scss */
   .blog-post h4 {
     font-size: 16px;
     font-family: "Monserrant";
     color: #a6a6a6;
     text-transform: uppercase; }
-  /* line 53, C:/xampp/htdocs/accelerate/wp-content/themes/accelerate-theme-child/style.scss */
+  /* line 53, C:/xampp/htdocs/accelerate-marketing/wp-content/themes/accelerate-theme-child/style.scss */
   .blog-post h2 {
     font-size: 24px;
     font-family: "Monserrant";
     font-weight: bold; }
-  /* line 58, C:/xampp/htdocs/accelerate/wp-content/themes/accelerate-theme-child/style.scss */
+  /* line 58, C:/xampp/htdocs/accelerate-marketing/wp-content/themes/accelerate-theme-child/style.scss */
   .blog-post .read-more-link {
     font-size: 24px;
     font-family: "Monserrant";
@@ -60,79 +60,79 @@ body {
     color: #45ac9d;
     text-transform: uppercase; }
 
-/* line 66, C:/xampp/htdocs/accelerate/wp-content/themes/accelerate-theme-child/style.scss */
+/* line 66, C:/xampp/htdocs/accelerate-marketing/wp-content/themes/accelerate-theme-child/style.scss */
 .left {
   float: left;
   width: 30%; }
 
-/* line 70, C:/xampp/htdocs/accelerate/wp-content/themes/accelerate-theme-child/style.scss */
+/* line 70, C:/xampp/htdocs/accelerate-marketing/wp-content/themes/accelerate-theme-child/style.scss */
 .right {
   float: right;
   width: 65%;
   padding-left: 2%; }
 
-/* line 75, C:/xampp/htdocs/accelerate/wp-content/themes/accelerate-theme-child/style.scss */
+/* line 75, C:/xampp/htdocs/accelerate-marketing/wp-content/themes/accelerate-theme-child/style.scss */
 clear {
   clear: both; }
 
-/* line 78, C:/xampp/htdocs/accelerate/wp-content/themes/accelerate-theme-child/style.scss */
+/* line 78, C:/xampp/htdocs/accelerate-marketing/wp-content/themes/accelerate-theme-child/style.scss */
 img {
   padding-bottom: 2%; }
 
-/* line 81, C:/xampp/htdocs/accelerate/wp-content/themes/accelerate-theme-child/style.scss */
+/* line 81, C:/xampp/htdocs/accelerate-marketing/wp-content/themes/accelerate-theme-child/style.scss */
 h3, h4, h5 {
   margin-top: 0; }
 
-/* line 86, C:/xampp/htdocs/accelerate/wp-content/themes/accelerate-theme-child/style.scss */
+/* line 86, C:/xampp/htdocs/accelerate-marketing/wp-content/themes/accelerate-theme-child/style.scss */
 .featured-work h4 {
   text-align: center; }
 
-/* line 91, C:/xampp/htdocs/accelerate/wp-content/themes/accelerate-theme-child/style.scss */
+/* line 91, C:/xampp/htdocs/accelerate-marketing/wp-content/themes/accelerate-theme-child/style.scss */
 .homepage-featured-work {
   width: 100%;
   padding-bottom: 5%; }
 
-/* line 96, C:/xampp/htdocs/accelerate/wp-content/themes/accelerate-theme-child/style.scss */
+/* line 96, C:/xampp/htdocs/accelerate-marketing/wp-content/themes/accelerate-theme-child/style.scss */
 .individual-featured-work {
   display: inline-block;
   width: 33%;
   list-style: none;
   text-align: center; }
-  /* line 101, C:/xampp/htdocs/accelerate/wp-content/themes/accelerate-theme-child/style.scss */
+  /* line 101, C:/xampp/htdocs/accelerate-marketing/wp-content/themes/accelerate-theme-child/style.scss */
   .individual-featured-work:last-child {
     padding-right: 0; }
 
-/* line 106, C:/xampp/htdocs/accelerate/wp-content/themes/accelerate-theme-child/style.scss */
+/* line 106, C:/xampp/htdocs/accelerate-marketing/wp-content/themes/accelerate-theme-child/style.scss */
 .case-study {
   width: 100%; }
-  /* line 108, C:/xampp/htdocs/accelerate/wp-content/themes/accelerate-theme-child/style.scss */
+  /* line 108, C:/xampp/htdocs/accelerate-marketing/wp-content/themes/accelerate-theme-child/style.scss */
   .case-study aside, .case-study div {
     display: inline;
     float: left;
     padding-bottom: 5%; }
-  /* line 114, C:/xampp/htdocs/accelerate/wp-content/themes/accelerate-theme-child/style.scss */
+  /* line 114, C:/xampp/htdocs/accelerate-marketing/wp-content/themes/accelerate-theme-child/style.scss */
   .case-study h5 {
     color: #666; }
-  /* line 117, C:/xampp/htdocs/accelerate/wp-content/themes/accelerate-theme-child/style.scss */
+  /* line 117, C:/xampp/htdocs/accelerate-marketing/wp-content/themes/accelerate-theme-child/style.scss */
   .case-study h2 {
     clear: none; }
 
-/* line 125, C:/xampp/htdocs/accelerate/wp-content/themes/accelerate-theme-child/style.scss */
+/* line 125, C:/xampp/htdocs/accelerate-marketing/wp-content/themes/accelerate-theme-child/style.scss */
 .nav-menu li {
   display: inline;
   padding: 0 10px; }
 
-/* line 129, C:/xampp/htdocs/accelerate/wp-content/themes/accelerate-theme-child/style.scss */
+/* line 129, C:/xampp/htdocs/accelerate-marketing/wp-content/themes/accelerate-theme-child/style.scss */
 .nav-menu a {
   color: white; }
-  /* line 131, C:/xampp/htdocs/accelerate/wp-content/themes/accelerate-theme-child/style.scss */
+  /* line 131, C:/xampp/htdocs/accelerate-marketing/wp-content/themes/accelerate-theme-child/style.scss */
   .nav-menu a:visited {
     color: white; }
 
-/* line 138, C:/xampp/htdocs/accelerate/wp-content/themes/accelerate-theme-child/style.scss */
+/* line 138, C:/xampp/htdocs/accelerate-marketing/wp-content/themes/accelerate-theme-child/style.scss */
 .homepage-hero a {
   color: white; }
-  /* line 140, C:/xampp/htdocs/accelerate/wp-content/themes/accelerate-theme-child/style.scss */
+  /* line 140, C:/xampp/htdocs/accelerate-marketing/wp-content/themes/accelerate-theme-child/style.scss */
   .homepage-hero a:visited {
     color: white; }
 
