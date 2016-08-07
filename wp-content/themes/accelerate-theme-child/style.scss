@@ -141,3 +141,57 @@ img {
     color: white;
   }
 }
+
+// Contact Form for Contact-Us Page
+
+#ninja_forms_form1_cont {
+  // form wrapper
+  #ninja_forms_form1_wrap {
+
+
+    //this is the requried fields message
+    .ninja-forms-required-items {
+      display: none;
+    }
+    //this is the name field
+    #ninja_forms_field_1_div_wrap {
+      display: inline-block;
+      width: 50%;
+      float: left
+      label {
+
+      }
+      input{
+
+      }
+    }
+    //this is the email field
+    #ninja_forms_field_2_div_wrap {
+      display: inline-block;
+      width: 50%;
+      float: left;
+      label {
+
+      }
+      input{
+
+      }
+    }
+    //this is the message field
+    #ninja_forms_field_3_div_wrap {
+      width: 100%;
+      label {
+
+      }
+      input{
+
+      }
+    }
+    // this is the contact button
+    #ninja_forms_field_4_div_wrap {
+      float: right;
+    }
+  }
+
+}
+

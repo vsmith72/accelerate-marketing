@@ -136,4 +136,28 @@ h3, h4, h5 {
   .homepage-hero a:visited {
     color: white; }
 
+/* line 153, C:/xampp/htdocs/accelerate-marketing/wp-content/themes/accelerate-theme-child/style.scss */
+#ninja_forms_form1_cont #ninja_forms_form1_wrap .ninja-forms-required-items {
+  display: none; }
+
+/* line 157, C:/xampp/htdocs/accelerate-marketing/wp-content/themes/accelerate-theme-child/style.scss */
+#ninja_forms_form1_cont #ninja_forms_form1_wrap #ninja_forms_field_1_div_wrap {
+  display: inline-block;
+  width: 50%;
+  float: left label; }
+
+/* line 169, C:/xampp/htdocs/accelerate-marketing/wp-content/themes/accelerate-theme-child/style.scss */
+#ninja_forms_form1_cont #ninja_forms_form1_wrap #ninja_forms_field_2_div_wrap {
+  display: inline-block;
+  width: 50%;
+  float: left; }
+
+/* line 181, C:/xampp/htdocs/accelerate-marketing/wp-content/themes/accelerate-theme-child/style.scss */
+#ninja_forms_form1_cont #ninja_forms_form1_wrap #ninja_forms_field_3_div_wrap {
+  width: 100%; }
+
+/* line 191, C:/xampp/htdocs/accelerate-marketing/wp-content/themes/accelerate-theme-child/style.scss */
+#ninja_forms_form1_cont #ninja_forms_form1_wrap #ninja_forms_field_4_div_wrap {
+  float: right; }
+
 /*# sourceMappingURL=style.css.map */
