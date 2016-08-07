@@ -1,0 +1,99 @@
+/* PushLive Admin CSS
+ * By: Jamin Szczesny
+ * For: 1 Squared
+*/
+
+form.pushlive h2.pl-title:before{
+	 background: url(../includes/img/pushlive50x50.png) no-repeat;
+	 width:50px;
+	 height:50px;
+	 float:left;
+	 margin:0 5px 5px 0;
+	 padding:5px;
+	 content:"";
+}
+
+div#pushlive-confirm-push{
+	display:inline-block;	
+}
+
+form.pushlive input[type=text], 
+form.pushlive textarea {
+	min-width:50%;
+	
+}
+	form.pushlive textarea {
+		min-height:150px;
+	}
+	
+	form.pushlive h3 {
+		clear:both;
+		float:left;
+	}
+
+
+table.pushlive input[type=checkbox].orig-selected:after{
+	content:"_";
+	font-weight:bold;	
+}
+
+	table.pushlive input:checked:after{
+		display:none;
+	}
+
+.pushlive-cursor {
+	display:none;
+	position:fixed;
+	xz-index:99999;
+	height:32px;
+	width:32px;
+	background: transparent url(img/wpspin_light-2x.gif) 0 0 no-repeat;
+}
+
+div.pushlive-website-link {
+	float:right;
+	text-align:center;
+}
+
+/* STARS */
+
+div.rateme a.star{
+	color: #e6b800;
+	text-shadow:1px 1px  2px black;
+	font-size:25px;
+	text-decoration:none;
+	display:table-cell;
+}
+
+div.rateme a.star:hover ~ a.star {
+	color:white !important;
+}
+
+/* RESULTS */
+div.pl-results h4.result {
+	color:red;
+	
+}
+div.pl-results h4.success {
+	color:green;
+}
+
+form.pushlive input, 
+form.pushlive textarea {
+	border-radius: 8px;
+    webkit-box-shadow: 6px 6px 6px 0 rgba(0,0,0,0.15) !important;
+    box-shadow: 6px 6px 6px 0 rgba(0,0,0,0.15) !important;
+}
+
+form.pushlive .test-database-result-good:after {
+	color:green;	
+	content:"CONNECTED";
+	font-weight:bold;
+	padding-left:5px;
+}
+form.pushlive .test-database-result-error:after{
+	color:red;
+	content:"FAIL - Check Settings";
+	font-weight:bold;
+	padding-left:5px;
+}
