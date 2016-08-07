@@ -1,8 +1,8 @@
 <?php defined( 'ABSPATH' ) or die();
-	
+
 	global $wpdb;
 	$pfx = $wpdb->prefix;
-	
+
 if ( current_user_can( 'manage_options' ) ):
 
 	$table = new Pushlive_Exclude_Table();
@@ -35,8 +35,8 @@ if ( current_user_can( 'manage_options' ) ):
 				</tr>
 			</thead>
 			<tbody>
-						
-				<?php foreach( $items as $count => $item ): 
+
+				<?php foreach( $items as $count => $item ):
 					$checked = in_array( $item, $included ) ? ' checked' : '';
 				?>
 					<tr class="row<?php echo $count%2; ?>">
@@ -44,7 +44,7 @@ if ( current_user_can( 'manage_options' ) ):
 						<td><?php echo $item; ?></td>
 					</tr>
 				<?php endforeach; ?>
-			
+
 			</tbody>
 		</table>
 		<script>
@@ -57,12 +57,12 @@ if ( current_user_can( 'manage_options' ) ):
 				$('#pet_toggle').prop('checked', true);
 			}
 
-			pets_chk.addClass('orig-selected'); 
+			pets_chk.addClass('orig-selected');
 
 		    $('#pet_toggle').click(function(){
 		    	var pets_chk = $("input[name='pushlive_exclude_tables[]']:checked");
 				if(pets.length > pets_chk.length){
-					$(this).add(pets).prop('checked', true);	
+					$(this).add(pets).prop('checked', true);
 				}else{
 					pets.removeProp('checked');
 				}
@@ -74,14 +74,14 @@ if ( current_user_can( 'manage_options' ) ):
 				$(this).val( $(this).val().replace( /http[s]*\:\/\//gi,'' ) );
 		    });
 
-		    
+
 		});
-		
+
 
 		</script>
 	<?php else: ?>
 		<hr>There were no tables found in your database<hr>
-	<?php endif; ?>	
+	<?php endif; ?>
 
 <?php else:?>
 <strong>You must have higher rights to view/edit the included & excluded tables section</strong>

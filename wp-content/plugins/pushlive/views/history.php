@@ -1,9 +1,9 @@
 <?php defined( 'ABSPATH' ) or die();
 
-	
+
 	$items = $table->get_history();
 	date_default_timezone_set("UTC");
-	
+
 	//print_r($items);
 ?>
 
@@ -22,14 +22,14 @@
 		</tr>
 	</thead>
 	<tbody>
-	<?php foreach( $items as $key => $item ): 
+	<?php foreach( $items as $key => $item ):
 		$date = new DateTime($item->pushTime);
-	
+
 		if( is_multisite() ){
 			$details = get_blog_details( $item->siteId );
 			$siteName = is_object($details) ? $details->blogname : 'Unknown';
 		}
-		
+
 	?>
 		<tr>
 			<td><?php echo $item->pushTime; ?> UTC (<?php echo human_time_diff( $date->getTimestamp() ); ?> ago)</td>
@@ -39,7 +39,7 @@
 				<td><?php echo $siteName; ?></td>
 				<td><?php echo $item->siteId; ?></td>
 			<?php endif; ?>
-		</tr>	
+		</tr>
 	<?php endforeach; ?>
 	</tbody>
 </table>
