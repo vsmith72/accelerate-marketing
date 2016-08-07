@@ -14,18 +14,18 @@ form.pushlive h2.pl-title:before{
 }
 
 div#pushlive-confirm-push{
-	display:inline-block;	
+	display:inline-block;
 }
 
-form.pushlive input[type=text], 
+form.pushlive input[type=text],
 form.pushlive textarea {
 	min-width:50%;
-	
+
 }
 	form.pushlive textarea {
 		min-height:150px;
 	}
-	
+
 	form.pushlive h3 {
 		clear:both;
 		float:left;
@@ -34,7 +34,7 @@ form.pushlive textarea {
 
 table.pushlive input[type=checkbox].orig-selected:after{
 	content:"_";
-	font-weight:bold;	
+	font-weight:bold;
 }
 
 	table.pushlive input:checked:after{
@@ -72,13 +72,13 @@ div.rateme a.star:hover ~ a.star {
 /* RESULTS */
 div.pl-results h4.result {
 	color:red;
-	
+
 }
 div.pl-results h4.success {
 	color:green;
 }
 
-form.pushlive input, 
+form.pushlive input,
 form.pushlive textarea {
 	border-radius: 8px;
     webkit-box-shadow: 6px 6px 6px 0 rgba(0,0,0,0.15) !important;
@@ -86,7 +86,7 @@ form.pushlive textarea {
 }
 
 form.pushlive .test-database-result-good:after {
-	color:green;	
+	color:green;
 	content:"CONNECTED";
 	font-weight:bold;
 	padding-left:5px;

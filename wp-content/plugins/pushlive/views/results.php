@@ -1,7 +1,7 @@
 <?php
 	defined( 'ABSPATH' ) or die();
 ?>
-	
+
 	<div class="wrap pl-results">
 		<h2>Push Results</h2>
 		<table class="widefat">

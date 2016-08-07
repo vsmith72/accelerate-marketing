@@ -13,7 +13,7 @@ class Pushlive_DBSync {
 	protected $source_user;
 	protected $source_password;
 	protected $source_database;
-	
+
 	protected $dumpfile;
 	protected $backupfile;
 	protected $importfile;
@@ -21,13 +21,13 @@ class Pushlive_DBSync {
 	protected $output;
 	protected $cmds = array();
 	public $return = array();
-	
+
 	protected $livefind;
 	protected $livereplace;
 	protected $liveDB;
 
 	public function __construct($config = array()) {
-		
+
 		ini_set('memory_limit', '4096M'); //fixes memory issues for large sites up to 4 GIGS
 		foreach($config as $var => $val) {
 			if(property_exists($this, $var)) {
@@ -37,47 +37,47 @@ class Pushlive_DBSync {
 
 		//This remains the same "get_option" for multisite or single site
 		$this->excludes = get_option( 'pushlive_exclude_tables' );
-		
+
 		//For Multisite - Changed get_option to get_site_option
 		$this->host = get_site_option( 'pushlive_db_host' );
 		$this->user = get_site_option( 'pushlive_db_user' );
 		$this->password = get_site_option( 'pushlive_db_pw' );
 		$this->database = get_site_option( 'pushlive_db_db' );
-		
+
 		$this->source_host = DB_HOST;
 		$this->source_user = DB_USER;
 		$this->source_password = DB_PASSWORD;
 		$this->source_database = DB_NAME;
-		
-		
-		
+
+
+
 	}
 
 	public function execute() {
 		return $this->dump() && $this->import();
 	}
-	
+
 	public function fixdata(){
-		
+
 		$this->liveDB = new wpdb( $this->user, $this->password, $this->database, $this->host );
-		
-		
-		
+
+
+
 		$stagebase = trim( get_site_option( 'pushlive_stage_base' ) );
 		$livebase = trim( get_site_option( 'pushlive_live_base' ) );
-		
+
 		if( !empty( $stagebase ) ){
 			$somesuccess = false;
 			$somefailures = false;
-			
+
 			//FOR Replicate you'll need to re-use this...
 			//$tables = $this->get_tables(); //get all tables
 			$tables = $this->excludes; //only the selected tables
-			
-			
-		
+
+
+
 			foreach( $tables as $key => $table ){
-				
+
 				$fields = $this->get_fields( $table );
 				//echo "<hr>$table<br>";
 				foreach( $fields as $fkey => $field ){
@@ -88,8 +88,8 @@ class Pushlive_DBSync {
 						$somesuccess = true;
 					}else{
 						$somefailures = true;
-					}	
-				}	
+					}
+				}
 			}
 		}else{
 			$this->return['replace'] = 901;
@@ -103,43 +103,43 @@ class Pushlive_DBSync {
 		}elseif ( $somesuccess ){
 			$this->return['replace'] = 900;
 		}else{
-			//only failures	
+			//only failures
 			$this->return['replace'] = 904;
 		}
-		
-	
+
+
 	}
-	
+
 	public function get_tables(){
-				
+
 		$results = $this->liveDB->get_results( "SHOW TABLES" );
-		
+
 		$tables = array();
-		
+
 		if( $results ){
 			foreach( $results as $key => $result ){
 				$tables[] = $result->{ 'Tables_in_' . $this->liveDB->dbname };
 			}
 		}
-		
+
 		return $tables;
-			
+
 	}
-	
+
 	public function get_fields($table){
-		
+
 		$fields = array();
-		
+
 		foreach( $this->liveDB->get_col( 'DESC ' . $table, 0 ) as $field ){
 			$fields[] = $field;
 		}
-		
+
 		return $fields;
-		
+
 	}
-	
+
 	public function getReturnStatus($code){
-	
+
 		switch ($code) {
 			case 0: return 'Success';
 			case 900: return 'Success';
@@ -150,7 +150,7 @@ class Pushlive_DBSync {
 			case 1000: return 'Fail - No Backup Path Rights';
 			default: return 'Unknown - Possible Error';
 		}
-	
+
 	}
 
 	public function getCommands() {
@@ -163,7 +163,7 @@ class Pushlive_DBSync {
 
 	public function getDumpFilename() {
 		if(!isset($this->dumpfile)) {
-			$filename = $this->getBackupDirectory(); 
+			$filename = $this->getBackupDirectory();
 			$filename .= 'dump.'.$this->source_database.'.'.date('Ymd-His').'.sql';
 			$this->dumpfile = $filename;
 		}
@@ -173,7 +173,7 @@ class Pushlive_DBSync {
 
 	public function getBackupFilename() {
 		if(!isset($this->backupfile)) {
-			$filename = $this->getBackupDirectory(); 
+			$filename = $this->getBackupDirectory();
 			$filename .= 'backup.'.$this->database.'.'.date('Ymd-His').'.sql';
 			$this->backupfile= $filename;
 		}
@@ -183,7 +183,7 @@ class Pushlive_DBSync {
 
 	public function getImportFilename() {
 		if(!isset($this->importfile)) {
-			$filename = $this->getBackupDirectory(); 
+			$filename = $this->getBackupDirectory();
 			$filename .= 'import.'.$this->database.'.'.date('Ymd-His').'.sql';
 			$this->importfile = $filename;
 		}
@@ -201,12 +201,12 @@ class Pushlive_DBSync {
 				}
 			}
 		}
-	}	
-	
+	}
+
 	protected function getBackupDirectory() {
 		//For Multisite or Single Site
 		$dir = rtrim( get_site_option( 'pushlive_backup_path' ), '/' ) . '/'; //make sure it ends with triling slash
-		
+
 		$this->checkBackupFolders($dir);
 		$dir .= 'pushlive/backups/';
 		return $dir;
@@ -233,7 +233,7 @@ class Pushlive_DBSync {
 			'cmds' => $cmd,
 			'output' => $output,
 			'files' => $files,
-			'return' => $this->return,				
+			'return' => $this->return,
 		);
 	}
 
@@ -277,7 +277,7 @@ class Pushlive_DBSync {
 		$this->addCommand($cmd, 'dump');
 		//@todo figure out what this $output should/could be
 		@$this->addOutput($output);
-		
+
 		$this->return['dump'] = $return;
 
 		return true;
@@ -290,7 +290,7 @@ class Pushlive_DBSync {
 		$this->addCommand($cmd, 'backup');
 		//@todo figure out what this $output should/could be
 		@$this->addOutput($output);
-		
+
 		$this->return['backup'] = $return;
 
 		return true;
@@ -299,7 +299,7 @@ class Pushlive_DBSync {
 	protected function import() {
 		if($this->backup()) {
 			//echo "<hr>{$this->getDumpFilename()}<hr>"; die();
-			
+
 			$dumpfile = file_get_contents($this->getDumpFilename());
 
 			//if you get an error (perhaps Allowed Memory Size) pointing near here

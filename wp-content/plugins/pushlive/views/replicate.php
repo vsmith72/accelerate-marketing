@@ -18,16 +18,16 @@
 			<input type="hidden" name="hosted_button_id" value="8XN6UEGZEQNWQ">
 			<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="Please donate to show your appreciation for PushLive">
 			<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-		</form>		
+		</form>
 	</div>
 	<h2 class="pl-title">PushLive Replicate - Coming In Next Release! (Almost Ready)</h2>
 	<form method="POST" action="<?php echo is_network_admin() ? '../' : ''; ?>options.php" class="pushlive">
-		<?php 
-			settings_fields( 'pushlive-replicate-options' ); 
+		<?php
+			settings_fields( 'pushlive-replicate-options' );
 			do_settings_sections( 'pushlive-replicate-options' );
 			submit_button();
 		?>
-		
+
 	</form>
 </div>
 <div class="pushlive-cursor"></div>
@@ -36,7 +36,7 @@ jQuery( document ).ready( function( $ ) {
 	$('form.pushlive').submit( function( event ){
 		$('.pushlive-cursor').show();
 		$('body').on( "mousemove", function( e ) {
-			$('.pushlive-cursor').offset({ 
+			$('.pushlive-cursor').offset({
 				left: ( e.pageX - 32 )
 				, top :  (e.pageY - 32 )
 			})

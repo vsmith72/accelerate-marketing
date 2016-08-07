@@ -1,7 +1,7 @@
 <?php defined( 'ABSPATH' ) or die();
 
 class Pushlive_RSync {
-	
+
 	protected $options = '-rlgDtvO --delete'; //add z option if sending remotely
 	protected $destination;
 	protected $source;
@@ -12,7 +12,7 @@ class Pushlive_RSync {
 
 	// @todo
 	protected $ssh = false;
-	
+
 	public $return = array();
 
 	/**
@@ -30,22 +30,22 @@ class Pushlive_RSync {
 	public function execute() {
 		// n is dry run
 		$this->writeExcludes();
-		
+
 		$cmd = $this->buildCommand();
 
 		$this->cmds[] = $cmd;
 		$output = array();
 		$return = null;
-		
+
 		exec( $cmd, $output, $return );
 		$this->output = $output;
 		$this->return['transfer'] = $return;
 
 		return $return;
 	}
-	
+
 	public function getReturnStatus($code){
-		
+
 		switch ($code) {
 			case 0: return 'Success';
 			case 1: return 'Syntax or usage error';
@@ -69,7 +69,7 @@ class Pushlive_RSync {
 			case 35: return 'Timeout waiting for daemon connection';
 			default: return 'Unknown';
 		}
-		
+
 	}
 
 	public function getOptions() {
@@ -91,7 +91,7 @@ class Pushlive_RSync {
 	public function getExcludes() {
 		return $this->excludes;
 	}
-	
+
 	public function getOutput() {
 		return is_array( $this->output ) ? implode( "\n", $this->output ) : $this->output;
 	}
@@ -113,14 +113,14 @@ class Pushlive_RSync {
 		$path = ABSPATH . $this->excludeFile;
 		return $path;
 	}
-	
+
 	public function getExcludeFileOptions() {
 		if( !empty( $this->excludeFile ) ){
 			return ' --exclude-from '.$this->getExcludeFilePath();
 		}
 		return '';
 	}
-	
+
 	public function setOptions( $options ) {
 		if( !preg_match( '/[a-z-_ ]+/i', $options ) ) {
 			return false;
@@ -130,7 +130,7 @@ class Pushlive_RSync {
 			return true;
 		}
 	}
-	
+
 	/**
 	 * @todo filter
 	 */
@@ -169,7 +169,7 @@ class Pushlive_RSync {
 
 		//$cmd = 'nohup '.$cmd.' > '.$filename;
 		//$cmd = JPATH_COMPONENT.'/rsync.sh '.$this->source.' '.$this->destination.' '.escapeshellarg($this->options).' '.$this->getExcludeFilePath();
-		$cmd = 'rsync '.$this->options.$this->getExcludeFileOptions(); 
+		$cmd = 'rsync '.$this->options.$this->getExcludeFileOptions();
 		$cmd .= ' '.$this->source.' '.$this->destination;
 
 		return $cmd;

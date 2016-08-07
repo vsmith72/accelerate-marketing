@@ -5,3 +5,4 @@ wp-config.php
 /wp-admin
 /wp-includes
 /wp-content/upgrade
+/wp-content/plugins/pushlive
