@@ -59,7 +59,7 @@ body {
     font-size: 24px;
     font-family: $heading-font;
     font-weight: bold;
-    color: #45ac9d;
+    color: $color;
     text-transform: uppercase;
   }
 }
@@ -133,7 +133,16 @@ img {
     }
   }
 }
+// Social Navigation
+.social-media-navigation {
+  width: 50%;
 
+  li {
+    display: inline;
+    float: right;
+    padding: 0 10px;
+  }
+}
 // Hero Area ==================================================================
 .homepage-hero a {
   color: white;
@@ -143,55 +152,46 @@ img {
 }
 
 // Contact Form for Contact-Us Page
+#ninja_forms_form_1_cont{
 
-#ninja_forms_form1_cont {
-  // form wrapper
-  #ninja_forms_form1_wrap {
-
-
-    //this is the requried fields message
-    .ninja-forms-required-items {
-      display: none;
-    }
-    //this is the name field
-    #ninja_forms_field_1_div_wrap {
-      display: inline-block;
-      width: 50%;
-      float: left
-      label {
-
-      }
-      input{
-
-      }
-    }
-    //this is the email field
-    #ninja_forms_field_2_div_wrap {
-      display: inline-block;
-      width: 50%;
-      float: left;
-      label {
-
-      }
-      input{
-
-      }
-    }
-    //this is the message field
-    #ninja_forms_field_3_div_wrap {
-      width: 100%;
-      label {
-
-      }
-      input{
-
-      }
-    }
-    // this is the contact button
-    #ninja_forms_field_4_div_wrap {
-      float: right;
-    }
+}
+#ninja_forms_form_1_all_fields_wrap {
+  width: 99%;
+  margin: auto;
+  //this is the requried fields message
+  .ninja-forms-required-items {
+    display: none;
   }
 
+  //this is the field wrappers
+  .field-wrap {
+    display: inline-block;
+    width: 50%;
+    float: left;
+
+    input{
+      width: 98%;
+      margin: auto;
+    }
+  }
+  //this is the message field
+  .field-wrap:nth-child(4) {
+    width: 100%;
+    label {
+
+    }
+
+  }
+  // this is the contact button
+  .field-wrap:nth-child(5) {
+    float: right;
+    width: 20%;
+    input {
+      padding: 5%;
+      border: none;
+      background-color: $color;
+      color: white;
+    }
+  }
 }
 
