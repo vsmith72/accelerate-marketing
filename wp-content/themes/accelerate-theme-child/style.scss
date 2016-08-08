@@ -195,3 +195,25 @@ img {
   }
 }
 
+// About Page =================================================================
+.about-page {
+  background: url("img/taxi-photo.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
+}
+.flex {
+  display: flex;
+  width: 100%;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  margin: auto;
+  height: 275px;
+  color: white;
+  text-align: center;
+  span {
+    color: $color;
+  }
+}
