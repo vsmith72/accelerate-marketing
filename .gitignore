@@ -6,3 +6,5 @@ wp-config.php
 /wp-includes
 /wp-content/upgrade
 /wp-content/plugins/pushlive
+.bowerrc
+bower.json

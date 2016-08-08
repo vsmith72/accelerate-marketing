@@ -59,7 +59,7 @@ body {
     font-size: 24px;
     font-family: $heading-font;
     font-weight: bold;
-    color: #45ac9d;
+    color: $color;
     text-transform: uppercase;
   }
 }
@@ -133,11 +133,147 @@ img {
     }
   }
 }
+// Social Navigation
+.social-media-navigation {
+  width: 50%;
 
+  li {
+    display: inline;
+    float: right;
+    padding: 0 10px;
+  }
+}
 // Hero Area ==================================================================
 .homepage-hero a {
   color: white;
   &:visited {
+    color: white;
+  }
+}
+
+// Contact Form for Contact-Us Page
+#ninja_forms_form_1_cont{
+
+}
+#ninja_forms_form_1_all_fields_wrap {
+  width: 99%;
+  margin: auto;
+  //this is the requried fields message
+  .ninja-forms-required-items {
+    display: none;
+  }
+
+  //this is the field wrappers
+  .field-wrap {
+    display: inline-block;
+    width: 50%;
+    float: left;
+
+    input{
+      width: 98%;
+      margin: auto;
+    }
+  }
+  //this is the message field
+  .field-wrap:nth-child(4) {
+    width: 100%;
+    label {
+
+    }
+
+  }
+  // this is the contact button
+  .field-wrap:nth-child(5) {
+    float: right;
+    width: 20%;
+    input {
+      padding: 5%;
+      border: none;
+      background-color: $color;
+      color: white;
+    }
+  }
+}
+
+// About Page =================================================================
+.about-page {
+  background: url("img/taxi-photo.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
+}
+.flex {
+  display: flex;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  margin: auto;
+  height: 275px;
+  color: white;
+  text-align: center;
+  span {
+    color: $color;
+  }
+}
+.about-content {
+  border-bottom: thin dotted #ccc;
+  width: 75%;
+  margin: 10px auto;
+
+  h4 {
+    text-transform: capitalize;
+    text-align: center;
+  }
+  .center {
+    width: 75%;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 2%;
+  }
+}
+
+.service-1,
+.service-3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 350px;
+  .service-feed-1,
+  .service-feed-3 {
+    width: 75%;
+    h2 {
+      margin-top: 0;
+    }
+  }
+}
+.service-2,
+.service-4 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 350px;
+  .service-feed-2,
+  .service-feed-4 {
+    width: 75%;
+  }
+}
+
+.about-cta {
+  width: 50%;
+  margin: 35px auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+  span {
+    font-weight: bold;
+  }
+  button {
+    background-color: $color;
+    border: none;
+    padding: 10px;
+    width: 25%;
     color: white;
   }
 }
