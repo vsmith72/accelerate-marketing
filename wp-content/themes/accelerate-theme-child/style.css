@@ -28,7 +28,7 @@ body {
 /* Homepage Styles */
 /* line 32, C:/xampp/htdocs/accelerate-marketing/wp-content/themes/accelerate-theme-child/style.scss */
 .home-page {
-  background: url("img/taxi-photo.jpg") no-repeat scroll left center/cover transparent; }
+  background: url("img/taxi-photo.jpg") no-repeat scroll left center cover transparent; }
 
 /* line 36, C:/xampp/htdocs/accelerate-marketing/wp-content/themes/accelerate-theme-child/style.scss */
 #masthead {
@@ -177,7 +177,7 @@ h3, h4, h5 {
 
 /* line 199, C:/xampp/htdocs/accelerate-marketing/wp-content/themes/accelerate-theme-child/style.scss */
 .about-page {
-  background: url("img/taxi-photo.jpg") no-repeat center/cover transparent; }
+  background: url("img/taxi-photo.jpg") no-repeat scroll left center cover transparent; }
 
 /* line 202, C:/xampp/htdocs/accelerate-marketing/wp-content/themes/accelerate-theme-child/style.scss */
 .flex {
