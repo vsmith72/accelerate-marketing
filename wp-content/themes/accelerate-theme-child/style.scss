@@ -30,7 +30,7 @@ body {
 }
 /* Homepage Styles */
 .home-page {
-  background: url("img/taxi-photo.jpg") no-repeat scroll left center cover rgba(0, 0, 0, 0);
+  background: url("img/taxi-photo.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
 }
 
 #masthead {
@@ -197,11 +197,10 @@ img {
 
 // About Page =================================================================
 .about-page {
-  background: url("img/taxi-photo.jpg") no-repeat scroll left center cover rgba(0, 0, 0, 0);
+  background: url("img/taxi-photo.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
 }
 .flex {
   display: flex;
-  width: 100%;
 }
 
 .about {
