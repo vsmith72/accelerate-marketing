@@ -43,33 +43,35 @@ get_header(); ?>
 <section class="about-content">
   <h4><?php echo $services ?></h4>
   <p class="center"><?php echo $summary ?></p>
-  <div class="service-1 clearfix">
-    <figure><?php echo wp_get_attachment_image( $service_image_1, $size); ?></figure>
-    <div class="service-feed">
+  <div class="service-1">
+    <?php echo wp_get_attachment_image( $service_image_1, $size); ?>
+    <span class="service-feed-1">
       <h2><?php echo $service_1 ?></h2>
       <p><?php echo $service_summary_1 ?></p>
-    </div>
+    </span>
   </div>
-  <div class="service-2 clearfix">
-    <figure><?php echo wp_get_attachment_image( $service_image_2, $size); ?></figure>
-    <div class="service-feed">
+
+  <div class="service-2">
+    <span class="service-feed-2">
       <h2><?php echo $service_2 ?></h2>
       <p><?php echo $service_summary_2 ?></p>
-    </div>
+    </span>
+    <?php echo wp_get_attachment_image( $service_image_2, $size); ?>
+
   </div>
-  <div class="service-3 clearfix">
-    <figure><?php echo wp_get_attachment_image( $service_image_3, $size); ?></figure>
-    <div class="service-feed">
+  <div class="service-3">
+    <?php echo wp_get_attachment_image( $service_image_3, $size); ?>
+    <span class="service-feed-3">
       <h2><?php echo $service_3 ?></h2>
       <p><?php echo $service_summary_3 ?></p>
-    </div>
+    </span>
   </div>
-  <div class="service-4 clearfix">
-    <figure><?php echo wp_get_attachment_image( $service_image_4, $size); ?></figure>
-    <div class="service-feed">
+  <div class="service-4">
+    <span class="service-feed-4">
       <h2><?php echo $service_4 ?></h2>
       <p><?php echo $service_summary_4 ?></p>
-    </div>
+    </span>
+    <?php echo wp_get_attachment_image( $service_image_4, $size); ?>
   </div>
 </section>
 <section>

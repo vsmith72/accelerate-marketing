@@ -232,26 +232,34 @@ img {
     margin: auto;
     padding-bottom: 2%;
   }
-  service-1,
-  service-3 {
-    float: left;
-    figure {
-      width: 35%;
-    }
-    service-feed {
-      display: inline;
-      width: 60%;
-    }
-  }
-  services-2,
-  services-4 {
-    figure,
-    service-feed {
-      display: inline-block;
-      float: right;
+}
+
+.service-1,
+.service-3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 350px;
+  .service-feed-1,
+  .service-feed-3 {
+    width: 75%;
+    h2 {
+      margin-top: 0;
     }
   }
 }
+.service-2,
+.service-4 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 350px;
+  .service-feed-2,
+  .service-feed-4 {
+    width: 75%;
+  }
+}
+
 .about-cta {
   width: 50%;
   margin: 35px auto;
