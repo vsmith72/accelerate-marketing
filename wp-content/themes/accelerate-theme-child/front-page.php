@@ -54,7 +54,8 @@ get_header(); ?>
 <!-- the posts -->
 <section class="recent-posts">
   <div class="site-content">
-    <div class="blog-post">
+
+    <span class="blog-post">
       <h4>From the Blog</h4>
       <?php query_posts('posts_per_page=1'); ?>
       <?php while ( have_posts() ) : the_post(); ?>
@@ -63,7 +64,13 @@ get_header(); ?>
         <a href="<?php the_permalink(); ?>" class="read-more-link">Read More <span>&rsaquo;</span></a>
       <?php endwhile; // end of the loop ?>
       <?php wp_reset_query(); // resets the altered query back to the original ?>
-    </div>
+    </span>
+
+    <?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
+    <span id="secondary" class="widget-area twitter-home" role="complementary">
+      <?php dynamic_sidebar( 'sidebar-2' ); ?>
+    </span>
+    <?php endif; ?>
   </div>
 </section><!-- .the posts -->
 <?php get_footer(); ?>

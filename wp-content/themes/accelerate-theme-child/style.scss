@@ -44,6 +44,7 @@ body {
 // blog post style on front-page
 .blog-post{
   width: 50%;
+  display: inline-block;
   h4{
     font-size: 16px;
     font-family: $heading-font;
@@ -275,5 +276,45 @@ img {
     padding: 10px;
     width: 25%;
     color: white;
+  }
+}
+
+// 404 page
+.error {
+  width: 75%;
+  margin: auto;
+  height: 920%;
+  text-align: center;
+  h1 {
+    font-size: 15em;
+    color: #333;
+    letter-spacing: .05em;
+  }
+  h4 {
+    text-transform: uppercase;
+    padding-bottom: 2%;
+  }
+  button {
+    padding: 15px;
+    border: none;
+    color: white;
+    background-color: $color;
+  }
+}
+
+// Twitter Feed
+.twitter-home {
+  width: 45%;
+  display: inline-block;
+  float: right;
+  li {
+    list-style: none;
+  }
+  h3 {
+    margin-top: 0;
+    color: #a6a6a6;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
   }
 }
