@@ -297,12 +297,38 @@ h3, h4, h5 {
   /* line 310, C:/xampp/htdocs/accelerate-marketing/wp-content/themes/accelerate-theme-child/style.scss */
   .twitter-home li {
     list-style: none; }
-  /* line 313, C:/xampp/htdocs/accelerate-marketing/wp-content/themes/accelerate-theme-child/style.scss */
+    /* line 312, C:/xampp/htdocs/accelerate-marketing/wp-content/themes/accelerate-theme-child/style.scss */
+    .twitter-home li .stt-em {
+      color: white;
+      display: none !important; }
+  /* line 317, C:/xampp/htdocs/accelerate-marketing/wp-content/themes/accelerate-theme-child/style.scss */
   .twitter-home h3 {
     margin-top: 0;
     color: #a6a6a6;
     font-size: 16px;
     font-weight: bold;
     text-transform: uppercase; }
+    /* line 323, C:/xampp/htdocs/accelerate-marketing/wp-content/themes/accelerate-theme-child/style.scss */
+    .twitter-home h3:after {
+      display: block;
+      margin-top: 36px;
+      content: "@Accelerate";
+      color: #333;
+      font-size: 24px;
+      font-family: "Monserrant";
+      font-weight: bold;
+      text-transform: none; }
+
+/* line 335, C:/xampp/htdocs/accelerate-marketing/wp-content/themes/accelerate-theme-child/style.scss */
+.follow-link {
+  width: 80%;
+  margin: auto;
+  font-size: 24px;
+  text-transform: uppercase; }
+  /* line 338, C:/xampp/htdocs/accelerate-marketing/wp-content/themes/accelerate-theme-child/style.scss */
+  .follow-link a {
+    font-family: "Monserrant";
+    font-weight: bold;
+    color: #45ac9d; }
 
 /*# sourceMappingURL=style.css.map */

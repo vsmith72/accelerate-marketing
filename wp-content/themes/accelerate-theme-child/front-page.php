@@ -69,6 +69,7 @@ get_header(); ?>
     <?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
     <span id="secondary" class="widget-area twitter-home" role="complementary">
       <?php dynamic_sidebar( 'sidebar-2' ); ?>
+      <aside class="follow-link"><a href="http://www.twitter.com/VanessaMarSmith">Follow us &rsaquo;</a></aside>
     </span>
     <?php endif; ?>
   </div>

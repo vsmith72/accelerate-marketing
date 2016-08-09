@@ -309,6 +309,10 @@ img {
   float: right;
   li {
     list-style: none;
+    .stt-em {
+      color: white;
+      display: none !important;
+    }
   }
   h3 {
     margin-top: 0;
@@ -316,5 +320,26 @@ img {
     font-size: 16px;
     font-weight: bold;
     text-transform: uppercase;
+    &:after {
+      display: block;
+      margin-top: 36px;
+      content: "@Accelerate";
+      color: #333;
+      font-size: 24px;
+      font-family: "Monserrant";
+      font-weight: bold;
+      text-transform: none;
+      }
+    }
   }
+.follow-link {
+  width: 80%;
+  margin: auto;
+  a {
+    font-family: $heading-font;
+    font-weight: bold;
+    color: $color;
+  }
+  font-size: 24px;
+  text-transform: uppercase;
 }
