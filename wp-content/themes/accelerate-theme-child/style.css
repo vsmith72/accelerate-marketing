@@ -352,4 +352,15 @@ h3, h4, h5 {
     font-family: "montserrat";
     color: #3b3b3b; }
 
+/* line 374, C:/xampp/htdocs/accelerate-marketing/wp-content/themes/accelerate-theme-child/style.scss */
+#search-2 input[type="text"] {
+  margin-bottom: 5px; }
+
+/* line 377, C:/xampp/htdocs/accelerate-marketing/wp-content/themes/accelerate-theme-child/style.scss */
+#search-2 input[type="submit"] {
+  font-family: "montserrat";
+  color: white;
+  background-color: #45ac9d;
+  border: none; }
+
 /*# sourceMappingURL=style.css.map */
