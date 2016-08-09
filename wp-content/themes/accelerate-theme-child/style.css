@@ -331,4 +331,25 @@ h3, h4, h5 {
     font-weight: bold;
     color: #45ac9d; }
 
+/* line 348, C:/xampp/htdocs/accelerate-marketing/wp-content/themes/accelerate-theme-child/style.scss */
+#mc4wp_form_widget-2 {
+  margin-left: 10px;
+  background-color: #45ac9d; }
+  /* line 352, C:/xampp/htdocs/accelerate-marketing/wp-content/themes/accelerate-theme-child/style.scss */
+  #mc4wp_form_widget-2 h2 {
+    padding-top: 20px;
+    color: white; }
+  /* line 356, C:/xampp/htdocs/accelerate-marketing/wp-content/themes/accelerate-theme-child/style.scss */
+  #mc4wp_form_widget-2 p:nth-child(2) {
+    text-align: right;
+    padding-bottom: 20px; }
+  /* line 360, C:/xampp/htdocs/accelerate-marketing/wp-content/themes/accelerate-theme-child/style.scss */
+  #mc4wp_form_widget-2 input {
+    border: none; }
+  /* line 363, C:/xampp/htdocs/accelerate-marketing/wp-content/themes/accelerate-theme-child/style.scss */
+  #mc4wp_form_widget-2 input[type="submit"] {
+    background-color: white;
+    font-family: "montserrat";
+    color: #3b3b3b; }
+
 /*# sourceMappingURL=style.css.map */

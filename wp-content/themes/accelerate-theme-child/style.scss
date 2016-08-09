@@ -343,3 +343,27 @@ img {
   font-size: 24px;
   text-transform: uppercase;
 }
+
+// Newsletter
+#mc4wp_form_widget-2 {
+  margin-left: 10px;
+  ;
+  background-color: $color;
+  h2 {
+    padding-top: 20px;
+    color: white;
+  }
+  p:nth-child(2) {
+    text-align: right;
+    padding-bottom: 20px;
+  }
+  input {
+    border: none;
+  }
+  input[type="submit"] {
+    background-color: white;
+    font-family: "montserrat";
+    color: #3b3b3b;
+
+  }
+}
